@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Madhumithakv/Expense-react.git/static/css/main.e6c13ad2.css",
+    "main.js": "/Madhumithakv/Expense-react.git/static/js/main.4e9c805e.js",
+    "static/js/488.048a9c15.chunk.js": "/Madhumithakv/Expense-react.git/static/js/488.048a9c15.chunk.js",
+    "index.html": "/Madhumithakv/Expense-react.git/index.html",
+    "main.e6c13ad2.css.map": "/Madhumithakv/Expense-react.git/static/css/main.e6c13ad2.css.map",
+    "main.4e9c805e.js.map": "/Madhumithakv/Expense-react.git/static/js/main.4e9c805e.js.map",
+    "488.048a9c15.chunk.js.map": "/Madhumithakv/Expense-react.git/static/js/488.048a9c15.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.4e9c805e.js"
+  ]
+}
