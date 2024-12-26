@@ -1,26 +1,30 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// Total display container
 const TotalContainer = styled.div`
-  background: rgba(255, 0, 255, 0.8);
-  color: #fff;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
   padding: 20px;
   border-radius: 15px;
-  text-align: center;
-  font-size: 1.8rem;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
-  transition: transform 0.3s ease;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
-  &:hover {
-    transform: scale(1.1);
-  }
+const TotalAmount = styled.h2`
+  font-size: 2rem;
+  color: #ff007f;
 `;
 
 function TotalExpense({ expenses }) {
-  const total = expenses.reduce((sum, expense) => sum + expense.amount, 0);
+  const total = expenses.reduce((acc, expense) => acc + expense.amount, 0);
 
-  return <TotalContainer>Total: ₹{total.toFixed(2)}</TotalContainer>;
+  return (
+    <TotalContainer>
+      <TotalAmount>Total Expense: ₹{total.toFixed(2)}</TotalAmount>
+    </TotalContainer>
+  );
 }
 
 export default TotalExpense;

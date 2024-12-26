@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import InputForm from './Components/InputForm';
 import ExpenseList from './Components/ExpenseList';
 import TotalExpense from './Components/TotalExpense';
+import CategoryChart from './Components/CategoryChart';
 import styled, { keyframes } from 'styled-components';
 
 // Animation for background gradient movement
@@ -46,6 +47,7 @@ function App() {
       <InputForm addExpense={addExpense} />
       <ExpenseList expenses={expenses} />
       <TotalExpense expenses={expenses} />
+      <CategoryChart data={expenses} />
     </AppContainer>
   );
 }
